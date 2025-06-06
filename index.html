@@ -2,130 +2,252 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Saranya's Personal Site</title>
+  <title>My Personal Portfolio</title>
+  <!-- Google Fonts for cute, modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation bar at the very top -->
-  <nav class="navbar">
-    <!-- Navigation buttons/links to each section -->
-    <a href="#bio" class="nav-btn">About Me</a>
-    <a href="#skills" class="nav-btn">My Skills</a>
-    <a href="#favourites" class="nav-btn">Favourites</a>
-  </nav>
-  <!-- Top section with pink plaid background, Pochacco image, and header inside -->
-  <div class="img-bg">
-    <img src="img/pochacco.png" alt="Pochacco character" class="profile-img">
-    <header class="intro-header">
-      <h1>Welcome to My Personal Webpage!</h1>
-      <p>
-        <!-- Write your introduction here -->
-        Hi, I'm Saranya. This is my personal site where I share my web development journey and favourite things!
+  <header class="hero-section">
+    <div class="carousel">
+      <!-- Carousel slides (add your portfolio items here) -->
+      <div class="carousel-slide active">
+        <img src="img/me3.png" alt="Portfolio Project 1" class="carousel-img">
+        <div class="carousel-caption">
+          <h1>Welcome to My Portfolio!</h1>
+          <p>Click the arrows to look at my latest projects!</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <a href="#intel-project" class="carousel-img-link" id="intel-img-link">
+          <img src="img/intel.png" alt="Portfolio Project 2" class="carousel-img clickable">
+        </a>
+        <div class="carousel-caption">
+          <h1>Intel Sustainability Timeline</h1>
+          <p>A modern, responsive, accessible website that highlights Intel's brand and showcases their sustainability journey.</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="img/" alt="Portfolio Project 3" class="carousel-img">
+        <div class="carousel-caption">
+          <h1>charity: water Game</h1>
+          <p>A interactive game that teaches users about </p>
+        </div>
+      </div>
+      <!-- Carousel navigation arrows -->
+      <button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
+      <button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
+    </div>
+  </header>
+  <main>
+    <nav>
+      <a href="#about" id="nav-about">About Me</a>
+      <a href="#skills" id="nav-skills">Skills</a>
+      <a href="#favourites" id="nav-favourites">Favourites</a>
+    </nav>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I am a student who enjoys designing and developing aesthetic and clean web pages. I'm always eager to learn more and look forward to adding new projects to my portfolio. Feel free to look around!</p>
+      
+      <!-- Reach out section -->
+      <h3>Reach out!</h3>
+      <p>If you'd like to connect or have any questions, feel free to email me at <a href="mailto:svemul36@asu.edu">svemul36@asu.edu</a>.</p>
+      <div class="contact-icons">
+        <a href="https://github.com/svemul15" target="_blank" aria-label="My GitHub" class="github-link">
+          <!-- Simple GitHub SVG icon for beginners -->
+          <svg height="32" width="32" viewBox="0 0 16 16" fill="#6c63ff" xmlns="http://www.w3.org/2000/svg" class="github-icon">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+            -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+            0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27
+            1.53-1.04 2.2-.82 2.2-.82.44 1.11.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48
+            0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section id="skills" style="display:none;">
+      <h2>Skills</h2>
+      <div class="skills-section">
+        <div class="skills-subheader">Technical Skills</div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <div class="skill-card">
+              <img src="img/html.png" alt="HTML logo" class="skill-icon">
+              <span>HTML</span>
+            </div>
+            <div class="skill-card">
+              <img src="img/css.png" alt="CSS logo" class="skill-icon">
+              <span>CSS</span>
+            </div>
+            <div class="skill-card">
+              <img src="img/javascript.webp" alt="JavaScript logo" class="skill-icon">
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-card">
+              <img src="img/python_104451.webp" alt="Python logo" class="skill-icon">
+              <span>Python</span>
+            </div>
+            <div class="skill-card">
+              <img src="img/c++.png" alt="C++ logo" class="skill-icon">
+              <span>C++</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-card">
+              <span class="skill-icon no-img">📱</span>
+              <span>Responsive Design</span>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon no-img">♿</span>
+              <span>Web Accessibility</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-subheader">Other Skills</div>
+        <div class="other-skills-card">
+          <ul class="other-skills-list">
+            <li>Responsibility</li>
+            <li>Teamwork</li>
+            <li>Leadership</li>
+            <li>Communication</li>
+            <li>Organization</li>
+            <li>Problem Solving</li>
+            <li>Time Management</li>
+            <li>Adaptability</li>
+            <li>Critical Thinking</li>
+            <li>Creativity</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="favourites" style="display:none;">
+      <h2>Favourites</h2>
+      <div class="favourites-bubbles-bg">
+        <ul class="fav-list">
+          <li>🍕 Pizza</li>
+          <li>🏊‍♀️ Swimming</li>
+          <li>🎬 Movies</li>
+          <li>🎮 Video Games</li>
+          <li>🎵 Listening to Music</li>
+          <li>🌸 Cherry Blossoms</li>
+          <li>🐶 Cute Dogs</li>
+          <li>🧁 Baking Sweets</li>
+          <li>✈️ Traveling</li>
+          <li>🌈 Rainy Days</li>
+        </ul>
+        <div class="bubble bubble1"></div>
+        <div class="bubble bubble2"></div>
+        <div class="bubble bubble3"></div>
+        <div class="bubble bubble4"></div>
+        <div class="bubble bubble5"></div>
+      </div>
+    </section>
+    <!-- Intel Project Tab -->
+    <section id="intel-project" style="display:none;">
+      <h2>Intel Sustainability Timeline Project</h2>
+      <p>This project is a modern, responsive, and accessible website that highlights Intel's brand and showcases their sustainability journey. It features:</p>
+      <ul>
+        <li>Custom timeline component for visualizing sustainability milestones</li>
+        <li>Brand colors and fonts for a professional look</li>
+        <li>Mobile-friendly and fully responsive design</li>
+        <li>Accessibility features for all users</li>
+        <li>Interactive elements and smooth navigation</li>
+        <li>Used Bootstrap and implemented Modal</li>
+      </ul>
+      <p>Check out the live site here:
+        <a href="https://svemul15.github.io/intel-localization/#" target="_blank" rel="noopener">Intel Sustainability Timeline Website</a>
       </p>
-    </header>
-  </div>
-  <!-- Divider line below the pink plaid background -->
-  <div class="divider"></div>
-  <!-- Bio Section -->
-  <section id="bio">
-    <h1>About Me</h1>
-    <p>
-      <!-- Bio -->
-      Hi! I'm a web development student learning how to build websites. I am excited to learn how to create visually appealing and functional web pages. Looking forward to sharing my projects with you! 😊
-    </p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>My Skills</h2>
-    <!-- Skills are now in a row, each in its own box -->
-    <div class="skills-row">
-      <!-- HTML Skill -->
-      <div class="skill">
-        <!-- Link to HTML official documentation -->
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-          <img src="img/html.png" alt="HTML logo" class="skill-icon-vertical">
-        </a>
-        <div>HTML</div>
-      </div>
-      <!-- CSS Skill -->
-      <div class="skill">
-        <!-- Link to CSS official documentation -->
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-          <img src="img/css.png" alt="CSS logo" class="skill-icon-vertical">
-        </a>
-        <div>CSS</div>
-      </div>
-      <!-- JavaScript Skill -->
-      <div class="skill">
-        <!-- Link to JavaScript official documentation -->
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-          <img src="img/javascript.webp" alt="JavaScript logo" class="skill-icon-vertical">
-        </a>
-        <div>JavaScript</div>
-      </div>
-      <!-- C++ Skill -->
-      <div class="skill">
-        <!-- Link to C++ official documentation -->
-        <a href="https://isocpp.org/" target="_blank">
-          <img src="img/c++.png" alt="C++ logo" class="skill-icon-vertical">
-        </a>
-        <div>C++</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Favourites Section -->
-  <section id="favourites">
-    <h2>Favourites</h2>
-    <!-- Favourite Movies -->
-    <div class="fav-group">
-      <h3>Movies</h3>
-      <!-- Small subheader under Movies header -->
-      <div style="text-align:center; color:#d72660; font-size:1em; margin-bottom:8px; font-weight:400;">
-        (click on the movie titles to see a trailer of my favourite movies!)
-      </div>
-      <ul class="fav-list">
-        <li>
-          <a href="https://www.youtube.com/watch?v=cSp1dM2Vj48" target="_blank" style="color:#d72660; text-decoration:underline;">
-            Ready Player One
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/watch?v=iwROgK94zcM" target="_blank" style="color:#d72660; text-decoration:underline;">
-            Howl's Moving Castle
-          </a>
-        </li>
-        <li>
-          <a href="https://youtu.be/foyufD52aog?feature=shared" target="_blank" style="color:#d72660; text-decoration:underline;">
-            Aladdin (2019)
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- Favourite Hobbies -->
-    <div class="fav-group">
-      <h4>Hobbies</h4>
-      <ul class="fav-list">
-        <li>Swimming</li>
-        <li>Hanging out with family & friends</li>
-        <li>Trying out new recipes</li>
-      </ul>
-    </div>
-    <!-- Favourite Foods -->
-    <div class="fav-group">
-      <h5>Foods</h5>
-      <ul class="fav-list">
-        <li>Sushi</li>
-        <li>Garlic Naan</li>
-        <li>Ice Cream Cake</li>
-      </ul>
-    </div>
-  </section>
-  <!-- Footer with contact information -->
-  <footer class="footer">
-    <!-- Simple contact info for beginners -->
-    Contact: <a href="mailto:svemul36@asu.edu" style="color:#d72660; text-decoration:underline;">svemul36@asu.edu</a>
+      <button id="back-to-carousel" class="back-btn">Back to Portfolio</button>
+    </section>
+  </main>
+  <footer>
+    <span class="footer-punch">You reached the end of my webpage! Thanks for visiting 💜</span>
   </footer>
+  <!-- Simple JavaScript to show only one section at a time -->
+  <script>
+    // Get nav links and sections
+    const navAbout = document.getElementById('nav-about');
+    const navSkills = document.getElementById('nav-skills');
+    const navFavourites = document.getElementById('nav-favourites');
+    const aboutSection = document.getElementById('about');
+    const skillsSection = document.getElementById('skills');
+    const favSection = document.getElementById('favourites');
+    const intelSection = document.getElementById('intel-project');
+    const intelImgLink = document.getElementById('intel-img-link');
+    const backBtn = document.getElementById('back-to-carousel');
+    const carouselHeader = document.querySelector('.hero-section');
+
+    // Function to show only the selected section
+    function showSection(section) {
+      aboutSection.style.display = 'none';
+      skillsSection.style.display = 'none';
+      favSection.style.display = 'none';
+      intelSection.style.display = 'none';
+      if (section) section.style.display = 'block';
+      // Show/hide carousel header depending on section
+      if (section === intelSection) {
+        carouselHeader.style.display = 'none';
+      } else {
+        carouselHeader.style.display = 'flex';
+      }
+    }
+
+    // Add click events to nav links
+    navAbout.addEventListener('click', function(e) {
+      e.preventDefault();
+      showSection(aboutSection);
+    });
+    navSkills.addEventListener('click', function(e) {
+      e.preventDefault();
+      showSection(skillsSection);
+    });
+    navFavourites.addEventListener('click', function(e) {
+      e.preventDefault();
+      showSection(favSection);
+    });
+    // Show About Me by default
+    showSection(aboutSection);
+
+    // Intel image click: show Intel project section
+    if (intelImgLink) {
+      intelImgLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        showSection(intelSection);
+      });
+    }
+    // Back button: return to carousel/portfolio
+    if (backBtn) {
+      backBtn.addEventListener('click', function() {
+        showSection(aboutSection); // Default to About Me, or you can show carousel only
+        carouselHeader.style.display = 'flex';
+      });
+    }
+  </script>
+  <!-- Carousel functionality (beginner-friendly) -->
+  <script>
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+    prevBtn.addEventListener('click', function() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    });
+    nextBtn.addEventListener('click', function() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    });
+    // Show the first slide by default
+    showSlide(currentSlide);
+  </script>
 </body>
 </html>
